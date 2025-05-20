@@ -1,21 +1,11 @@
 import { Briefcase, GraduationCap, Mail, MapPin, Phone, Linkedin, Github, Target, ExternalLink } from 'lucide-react';
 import Image from 'next/image';
 import { cn } from "@/lib/utils";
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+//import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import perfil from './perfil1.jpg';
 import {Geist, Geist_Mono} from 'next/font/google';
 
-
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-});
 
 const cvData = {
   name: "Mario Chusan",
