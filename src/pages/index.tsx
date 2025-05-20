@@ -4,7 +4,6 @@ import { cn } from "@/lib/utils";
 //import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import perfil from './perfil1.jpg';
-import {Geist, Geist_Mono} from 'next/font/google';
 
 
 const cvData = {
