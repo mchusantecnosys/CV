@@ -56,21 +56,39 @@ const cvData = {
         "Participated in daily stand-ups and team meetings.",
       ],
     },
+    {
+      id: 3,
+      title: "STEM Teacher", // Example, replace with actual
+      company: "Mentes Brillantes", // Example, replace with actual
+      period: "Jun 2023 - Jan 2025", // Example, replace with actual
+      description: [ // Replace with actual responsibilities/achievements
+        "Worked as a STEM and English teacher, planning and teaching science, technology, engineering, and math classes to students from grades 3 to 12",
+        "I created engaging, hands-on lessons that promote critical thinking and creativity.",
+        "Additionally, I have experience developing Python applications.",
+      ],
+    },
   ],
   education: [
     {
       id: 1,
-      degree: "Systems Engineering", // Example, replace with actual
-      institution: "Universidad Nacional Mayor de San Marcos", // Example, replace with actual
-      period: "2017 - 2022", // Example, replace with actual
-      description: "Focused on software development methodologies and database management. Completed a capstone project on [Placeholder Project Topic]." // Replace/elaborate
+      degree: "Networking and Operating System", // Example, replace with actual
+      institution: "Escuela Superior Politécnica del Litoral (ESPOL)", // Example, replace with actual
+      period: "2012 - 2018", // Example, replace with actual
+      description: "The networking and operating systems work with Cisco involves configuring and managing computer networks." // Replace/elaborate
+    },
+    {
+      id: 2,
+      degree: "Computer Science", // Example, replace with actual
+      institution: "Harvard University (EdX)", // Example, replace with actual
+      period: "2019 - 2021", // Example, replace with actual
+      description: "The Computer Science course from HarvardX (edX) covers fundamental concepts such as algorithms, data structures, programming in languages like C and Python, web development, and problem-solving." // Replace/elaborate
     },
     // Add more education entries if necessary
   ],
   skills: [ // Optional: Add a skills section if desired
-    "JavaScript", "TypeScript", "React", "Angular", "Node.js", "Express.js",
-    ".NET", "C#", "Python", "Java", "SQL Server", "PostgreSQL", "MongoDB",
-    "HTML", "CSS", "Tailwind CSS", "Git", "Docker", "Agile Methodologies"
+    "JavaScript", "TypeScript", "React", "Angular", "Node.js", "Next.js", "React.js",
+    "Python", "Java", "SQL Server", "PostgreSQL", "MongoDB", "Vite", "Python",
+    "HTML5", "CSS", "Tailwind CSS", "Git", "Docker", "Agile Methodologies"
   ]
 };
 
@@ -107,7 +125,7 @@ export default function Home() {
         </header>
 
         {/* Contact Info & Social Links */}
-        <Section title="Contact & Connect" icon={<Mail size={32}/>} className="border-b border-border/70" id="contact">
+        <Section title="Contact Info & Social Links" icon={<Mail size={32}/>} className="border-b border-border/70" id="contact">
           <Card className="bg-card shadow-lg">
             <CardContent className="p-6 md:p-8 grid md:grid-cols-2 gap-8">
               <div>
