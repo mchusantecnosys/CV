@@ -1,9 +1,9 @@
 import { Briefcase, GraduationCap, Mail, MapPin, Phone, Linkedin, Github, Target, ExternalLink } from 'lucide-react';
-import Image from 'next/image';
 import { cn } from "@/lib/utils";
 //import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import perfil from './perfil1.jpg';
+import { Hero } from './Hero';
+import { Footer } from './Footer';
 
 
 const cvData = {
@@ -97,21 +97,7 @@ export default function Home() {
     <div className="min-h-screen bg-background text-foreground font-sans antialiased">
       <main className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl py-12 md:py-20">
         {/* Hero Section */}
-        <header className="text-center mb-16 md:mb-20">
-          {cvData.profilePictureUrl && (
-            <Image 
-              src={perfil} 
-              alt={cvData.name} 
-              width={160} 
-              height={160} 
-              className="rounded-full mx-auto mb-8 shadow-xl border-4 border-primary/20" 
-              data-ai-hint="profile person" 
-              priority
-            />
-          )}
-          <h1 className="text-5xl md:text-7xl font-bold text-primary mb-3">{cvData.name}</h1>
-          <p className="text-2xl md:text-3xl text-muted-foreground tracking-tight">{cvData.jobTitle}</p>
-        </header>
+        <Hero name={cvData.name} jobTitle={cvData.jobTitle}/>
 
         {/* Contact Info & Social Links */}
         <Section title="Contact Info & Social Links" icon={<Mail size={32}/>} className="border-b border-border/70" id="contact">
@@ -216,11 +202,8 @@ export default function Home() {
             </div>
           </Section>
         )}
-
-        <footer className="text-center mt-16 md:mt-20 pt-10 border-t border-border/70">
-          <p className="text-muted-foreground">&copy; {new Date().getFullYear()} {cvData.name}. All rights reserved.</p>
-        </footer>
       </main>
+        <Footer/>
     </div>
   );
 }
